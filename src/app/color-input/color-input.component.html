@@ -1,0 +1,8 @@
+<label for="color">type color:</label>
+<input id="color" placeholder="(red, blue, green)" class="bkg-red" title="(red, blue, green)" 
+[class]="cls" 
+[class.border-width-thick]="isThick"
+ [(ngModel)]="color" (keyup)="setColor()">
+ <input type="checkbox" [(ngModel)]="isThick" [ngModelOptions]="{standalone: true}">
+<span [style.font-weight]="isThick ? 'bold': 'normal'"> isThick<span [hidden]="!isThick">!</span></span>
+<br> {{color}} <br> {{cls}} <br>

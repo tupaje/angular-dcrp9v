@@ -1,0 +1,18 @@
+<h4>bindings color:{{color}}</h4>
+<div style="border: 1px #000 solid;">
+<app-text-input></app-text-input>
+</div>
+<br>
+<div style="border: 1px #000 solid;">
+<app-bindings2 [color]="color"></app-bindings2>
+</div>
+<br>
+<div style="border: 1px #000 solid;">
+<app-color-input [color]="color"></app-color-input>
+</div>
+
+<ul class="heroes">
+  <li *ngFor="let item of stringers">
+	{{item.name}}
+  </li>
+</ul>
